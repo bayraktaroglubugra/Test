@@ -12,9 +12,19 @@
 		8470F2781D0335BB007FD0AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8470F2761D0335BB007FD0AC /* Main.storyboard */; };
 		8470F27A1D0335BB007FD0AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8470F2791D0335BB007FD0AC /* Assets.xcassets */; };
 		8470F27D1D0335BB007FD0AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8470F27B1D0335BB007FD0AC /* LaunchScreen.storyboard */; };
-		8470F2881D0335BC007FD0AC /* TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470F2871D0335BC007FD0AC /* TestTests.swift */; };
 		8470F2931D0335BC007FD0AC /* TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470F2921D0335BC007FD0AC /* TestUITests.swift */; };
 		93D16026DBFEC1D69E504ABE /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E852AF6485ACC84656BB37D9 /* Pods_Test.framework */; };
+		B0395EDE1D04E4CC00014719 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0395EDD1D04E4CC00014719 /* SignupVC.swift */; };
+		B0395EE11D04E72D00014719 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0395EE01D04E72D00014719 /* GoogleService-Info.plist */; };
+		B0395EE71D04F30C00014719 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0395EE41D04F30C00014719 /* FBSDKCoreKit.framework */; };
+		B0395EE81D04F30C00014719 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0395EE51D04F30C00014719 /* FBSDKLoginKit.framework */; };
+		B0395EE91D04F30C00014719 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0395EE61D04F30C00014719 /* FBSDKShareKit.framework */; };
+		B0395EEB1D05153800014719 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0395EE41D04F30C00014719 /* FBSDKCoreKit.framework */; };
+		B0395EEC1D05153800014719 /* FBSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0395EE41D04F30C00014719 /* FBSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0395EED1D05153900014719 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0395EE51D04F30C00014719 /* FBSDKLoginKit.framework */; };
+		B0395EEE1D05153900014719 /* FBSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0395EE51D04F30C00014719 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0395EEF1D05153900014719 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0395EE61D04F30C00014719 /* FBSDKShareKit.framework */; };
+		B0395EF01D05153900014719 /* FBSDKShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0395EE61D04F30C00014719 /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B0395EF11D05153900014719 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B0395EEE1D05153900014719 /* FBSDKLoginKit.framework in Embed Frameworks */,
+				B0395EEC1D05153800014719 /* FBSDKCoreKit.framework in Embed Frameworks */,
+				B0395EF01D05153900014719 /* FBSDKShareKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		49C5D4740F3231AB943D9E4C /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 		4A9A9356497057090438BE57 /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -50,6 +76,12 @@
 		8470F28E1D0335BC007FD0AC /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8470F2921D0335BC007FD0AC /* TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUITests.swift; sourceTree = "<group>"; };
 		8470F2941D0335BC007FD0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0395EDD1D04E4CC00014719 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		B0395EE01D04E72D00014719 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B0395EE41D04F30C00014719 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		B0395EE51D04F30C00014719 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		B0395EE61D04F30C00014719 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		B0395EEA1D04F3F200014719 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		E852AF6485ACC84656BB37D9 /* Pods_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -58,7 +90,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0395EEB1D05153800014719 /* FBSDKCoreKit.framework in Frameworks */,
+				B0395EE91D04F30C00014719 /* FBSDKShareKit.framework in Frameworks */,
+				B0395EED1D05153900014719 /* FBSDKLoginKit.framework in Frameworks */,
+				B0395EEF1D05153900014719 /* FBSDKShareKit.framework in Frameworks */,
 				93D16026DBFEC1D69E504ABE /* Pods_Test.framework in Frameworks */,
+				B0395EE71D04F30C00014719 /* FBSDKCoreKit.framework in Frameworks */,
+				B0395EE81D04F30C00014719 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,11 +143,14 @@
 			isa = PBXGroup;
 			children = (
 				8470F2721D0335BB007FD0AC /* AppDelegate.swift */,
+				B0395EEA1D04F3F200014719 /* Bridging-Header.h */,
 				8470F2741D0335BB007FD0AC /* ViewController.swift */,
 				8470F2761D0335BB007FD0AC /* Main.storyboard */,
+				B0395EDF1D04E57C00014719 /* VC */,
 				8470F2791D0335BB007FD0AC /* Assets.xcassets */,
 				8470F27B1D0335BB007FD0AC /* LaunchScreen.storyboard */,
 				8470F27E1D0335BB007FD0AC /* Info.plist */,
+				B0395EE01D04E72D00014719 /* GoogleService-Info.plist */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -132,9 +173,20 @@
 			path = TestUITests;
 			sourceTree = "<group>";
 		};
+		B0395EDF1D04E57C00014719 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				B0395EDD1D04E4CC00014719 /* SignupVC.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
 		C2B2002FDB5A8120AAC7B2E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0395EE41D04F30C00014719 /* FBSDKCoreKit.framework */,
+				B0395EE51D04F30C00014719 /* FBSDKLoginKit.framework */,
+				B0395EE61D04F30C00014719 /* FBSDKShareKit.framework */,
 				E852AF6485ACC84656BB37D9 /* Pods_Test.framework */,
 			);
 			name = Frameworks;
@@ -162,6 +214,7 @@
 				8470F26D1D0335BB007FD0AC /* Resources */,
 				7BF7737C65BAB6F96C5AEFCC /* 📦 Embed Pods Frameworks */,
 				73A913406AEF28244BF7B2C1 /* 📦 Copy Pods Resources */,
+				B0395EF11D05153900014719 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +273,7 @@
 				TargetAttributes = {
 					8470F26E1D0335BB007FD0AC = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VZ6J65M3Z6;
 					};
 					8470F2821D0335BC007FD0AC = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -257,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8470F27D1D0335BB007FD0AC /* LaunchScreen.storyboard in Resources */,
+				B0395EE11D04E72D00014719 /* GoogleService-Info.plist in Resources */,
 				8470F27A1D0335BB007FD0AC /* Assets.xcassets in Resources */,
 				8470F2781D0335BB007FD0AC /* Main.storyboard in Resources */,
 			);
@@ -331,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0395EDE1D04E4CC00014719 /* SignupVC.swift in Sources */,
 				8470F2751D0335BB007FD0AC /* ViewController.swift in Sources */,
 				8470F2731D0335BB007FD0AC /* AppDelegate.swift in Sources */,
 			);
@@ -340,7 +396,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8470F2881D0335BC007FD0AC /* TestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,10 +532,17 @@
 			baseConfigurationReference = 4A9A9356497057090438BE57 /* Pods-Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bodybeatmainapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -489,10 +551,17 @@
 			baseConfigurationReference = 49C5D4740F3231AB943D9E4C /* Pods-Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bodybeatmainapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 			};
 			name = Release;
 		};

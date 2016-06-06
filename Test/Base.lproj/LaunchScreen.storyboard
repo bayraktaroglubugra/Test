@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -20,21 +20,14 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="2lF-1S-cd0">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="560" id="S9K-OM-4NO"/>
-                                    <constraint firstAttribute="height" constant="600" id="dwP-Eh-Dcb"/>
-                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="2lF-1S-cd0" secondAttribute="trailing" id="Lg0-ea-fps"/>
-                            <constraint firstItem="2lF-1S-cd0" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="Mko-bo-clC"/>
-                            <constraint firstItem="2lF-1S-cd0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="bpZ-0q-Nly"/>
-                            <constraint firstItem="2lF-1S-cd0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ccg-31-UCq"/>
-                            <constraint firstAttribute="trailing" secondItem="2lF-1S-cd0" secondAttribute="trailing" id="ojB-b3-NSB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2lF-1S-cd0" secondAttribute="trailing" id="xlc-EA-uYn"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="2lF-1S-cd0" secondAttribute="bottom" id="zGz-7S-AXl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2lF-1S-cd0" secondAttribute="trailing" constant="-20" id="IC5-ha-wc0"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="2lF-1S-cd0" secondAttribute="bottom" id="LmT-a4-mjp"/>
+                            <constraint firstItem="2lF-1S-cd0" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="Zju-Lc-lHS"/>
+                            <constraint firstItem="2lF-1S-cd0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="md8-i5-oef"/>
                         </constraints>
                     </view>
                 </viewController>

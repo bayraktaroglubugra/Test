@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="M2h-gt-LNB">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -140,10 +140,10 @@
             </objects>
             <point key="canvasLocation" x="279" y="384"/>
         </scene>
-        <!--View Controller-->
+        <!--SignupVC-->
         <scene sceneID="8eo-hq-nDP">
             <objects>
-                <viewController id="M2h-gt-LNB" sceneMemberID="viewController">
+                <viewController id="M2h-gt-LNB" customClass="SignupVC" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Y6-xr-ZAQ"/>
                         <viewControllerLayoutGuide type="bottom" id="3yK-0N-7Up"/>
@@ -151,7 +151,134 @@
                     <view key="view" contentMode="scaleToFill" id="LZm-og-37Q">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="baO-aK-dVE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landing-logo" translatesAutoresizingMaskIntoConstraints="NO" id="2ws-fW-txw">
+                                <rect key="frame" x="180" y="69" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Ipy-tF-Mdf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igK-Tv-TlO">
+                                <rect key="frame" x="180" y="207" width="240" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="mSt-XR-LoI"/>
+                                </constraints>
+                                <state key="normal" title="Login with Facebook" backgroundImage="fb">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFB:" destination="M2h-gt-LNB" eventType="touchUpInside" id="Jug-nw-Lg4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YM-Jz-aC8">
+                                <rect key="frame" x="180" y="265" width="240" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="H5H-Ky-ApL"/>
+                                </constraints>
+                                <state key="normal" title="Login with Twitter" backgroundImage="tw">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTW:" destination="M2h-gt-LNB" eventType="touchUpInside" id="c2D-1G-0oC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oc2-2Y-GNy">
+                                <rect key="frame" x="180" y="323" width="240" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="CBc-V1-v0h"/>
+                                </constraints>
+                                <state key="normal" title="Login with Google" backgroundImage="gggl">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnGG:" destination="M2h-gt-LNB" eventType="touchUpInside" id="OnX-DJ-ZbJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAs-vz-tYC">
+                                <rect key="frame" x="180" y="384" width="240" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Bap-qo-q04"/>
+                                </constraints>
+                                <state key="normal" title="Login wth E-mail" backgroundImage="email">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnEmail:" destination="M2h-gt-LNB" eventType="touchUpInside" id="L3q-br-oPE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6va-xl-Z4b">
+                                <rect key="frame" x="180" y="504" width="240" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="lZ6-ao-BOh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="SIGN UP NOW" backgroundImage="signup-btn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSignup:" destination="M2h-gt-LNB" eventType="touchUpInside" id="lN3-AE-HWb"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="dwY-eA-16d">
+                                <rect key="frame" x="290" y="28" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By proceeding, you agree our" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OO9-fw-aIC">
+                                <rect key="frame" x="186" y="437" width="234" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib4-U5-q3t">
+                                <rect key="frame" x="186" y="457" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Terms of Use">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjh-rb-Tj8">
+                                <rect key="frame" x="314" y="457" width="106" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Privacy Policy">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="and" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60z-L8-uIS">
+                                <rect key="frame" x="282" y="461" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2ws-fW-txw" firstAttribute="leading" secondItem="igK-Tv-TlO" secondAttribute="leading" id="0oi-qF-hN3"/>
+                            <constraint firstItem="oc2-2Y-GNy" firstAttribute="leading" secondItem="RAs-vz-tYC" secondAttribute="leading" id="4tv-0B-BmX"/>
+                            <constraint firstItem="igK-Tv-TlO" firstAttribute="top" secondItem="2ws-fW-txw" secondAttribute="bottom" constant="10" id="Ad4-pR-W4o"/>
+                            <constraint firstItem="7YM-Jz-aC8" firstAttribute="trailing" secondItem="oc2-2Y-GNy" secondAttribute="trailing" id="GB1-d4-rzb"/>
+                            <constraint firstItem="baO-aK-dVE" firstAttribute="centerX" secondItem="2ws-fW-txw" secondAttribute="centerX" id="JHM-i1-Qx6"/>
+                            <constraint firstAttribute="trailing" secondItem="baO-aK-dVE" secondAttribute="trailing" id="Kwl-Dc-Asc"/>
+                            <constraint firstItem="2ws-fW-txw" firstAttribute="trailing" secondItem="igK-Tv-TlO" secondAttribute="trailing" id="NhU-td-BuD"/>
+                            <constraint firstItem="dwY-eA-16d" firstAttribute="centerX" secondItem="2ws-fW-txw" secondAttribute="centerX" id="Tiz-8v-fYr"/>
+                            <constraint firstItem="oc2-2Y-GNy" firstAttribute="top" secondItem="7YM-Jz-aC8" secondAttribute="bottom" constant="13" id="Tt7-mD-nVC"/>
+                            <constraint firstItem="baO-aK-dVE" firstAttribute="leading" secondItem="LZm-og-37Q" secondAttribute="leading" id="bMO-HN-2fi"/>
+                            <constraint firstItem="3yK-0N-7Up" firstAttribute="top" secondItem="6va-xl-Z4b" secondAttribute="bottom" constant="33" id="bc9-Oa-L8b"/>
+                            <constraint firstItem="baO-aK-dVE" firstAttribute="bottom" secondItem="3yK-0N-7Up" secondAttribute="top" id="cwP-Hj-d6C"/>
+                            <constraint firstItem="2ws-fW-txw" firstAttribute="top" secondItem="6Y6-xr-ZAQ" secondAttribute="bottom" constant="49" id="esz-Mu-lmz"/>
+                            <constraint firstItem="oc2-2Y-GNy" firstAttribute="trailing" secondItem="RAs-vz-tYC" secondAttribute="trailing" id="jip-7k-eD5"/>
+                            <constraint firstItem="baO-aK-dVE" firstAttribute="top" secondItem="LZm-og-37Q" secondAttribute="top" id="jqu-Uv-dn5"/>
+                            <constraint firstItem="RAs-vz-tYC" firstAttribute="trailing" secondItem="6va-xl-Z4b" secondAttribute="trailing" id="kvP-HL-7y1"/>
+                            <constraint firstItem="dwY-eA-16d" firstAttribute="top" secondItem="6Y6-xr-ZAQ" secondAttribute="bottom" constant="8" symbolic="YES" id="myT-tX-68q"/>
+                            <constraint firstItem="igK-Tv-TlO" firstAttribute="leading" secondItem="7YM-Jz-aC8" secondAttribute="leading" id="o2B-vO-zRy"/>
+                            <constraint firstItem="igK-Tv-TlO" firstAttribute="trailing" secondItem="7YM-Jz-aC8" secondAttribute="trailing" id="owh-VK-Sfd"/>
+                            <constraint firstItem="7YM-Jz-aC8" firstAttribute="leading" secondItem="oc2-2Y-GNy" secondAttribute="leading" id="uJB-6z-J3K"/>
+                            <constraint firstItem="RAs-vz-tYC" firstAttribute="leading" secondItem="6va-xl-Z4b" secondAttribute="leading" id="wCv-wv-ccj"/>
+                            <constraint firstItem="RAs-vz-tYC" firstAttribute="top" secondItem="oc2-2Y-GNy" secondAttribute="bottom" constant="16" id="yCB-jB-3Du"/>
+                            <constraint firstItem="7YM-Jz-aC8" firstAttribute="top" secondItem="igK-Tv-TlO" secondAttribute="bottom" constant="13" id="yHa-rp-jmS"/>
+                            <constraint firstItem="6va-xl-Z4b" firstAttribute="top" secondItem="RAs-vz-tYC" secondAttribute="bottom" constant="75" id="zh1-JZ-qF7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbK-GX-Thm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -264,9 +391,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="254" height="452"/>
+        <image name="email" width="181" height="34"/>
+        <image name="fb" width="181" height="34"/>
         <image name="form-input-bg" width="180" height="34"/>
+        <image name="gggl" width="181" height="34"/>
         <image name="landing-logo" width="117" height="57"/>
         <image name="login-form-bg" width="253" height="450"/>
         <image name="signup-btn" width="180" height="37"/>
+        <image name="tw" width="181" height="34"/>
     </resources>
 </document>
