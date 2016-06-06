@@ -10,6 +10,8 @@ import UIKit
 import Firebase
 import FBSDKCoreKit
 import FBSDKLoginKit
+import Fabric
+import TwitterKit
 
 
 
@@ -22,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         FIRApp.configure()
+        Twitter.sharedInstance().startWithConsumerKey("LwBSYG785ubnBrAFM5zPENAY0", consumerSecret: "FRwwpLQVgL8uaGnsCWUBsrKTp2lOAwjIxdvbInOt9OsQNyaEv2")
         
         
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)

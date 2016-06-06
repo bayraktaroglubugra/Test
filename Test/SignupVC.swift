@@ -10,6 +10,8 @@ import UIKit
 import Firebase
 import FBSDKLoginKit
 import FBSDKCoreKit
+import Fabric
+import TwitterKit
 
 
 class SignupVC: UIViewController {
@@ -43,6 +45,16 @@ class SignupVC: UIViewController {
     }
 
     @IBAction func btnTW(sender: AnyObject) {
+        Twitter.sharedInstance().logInWithCompletion({
+            session, error in
+            
+            if session != nil {
+                
+                print("signed in as \(session?.userName)")
+            } else {
+                print("zort")
+            }
+        })
     }
     @IBAction func btnGG(sender: AnyObject) {
     }
