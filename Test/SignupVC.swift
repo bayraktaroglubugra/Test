@@ -45,10 +45,23 @@ class SignupVC: UIViewController {
     }
 
     @IBAction func btnTW(sender: AnyObject) {
+        
         Twitter.sharedInstance().logInWithCompletion({
             session, error in
             
             if session != nil {
+                let authToken = session?.authToken
+                let authTokenSecret = session?.authTokenSecret
+                let credential = FIRTwitterAuthProvider.credentialWithToken(authToken!, secret: authTokenSecret!)
+                FIRAuth.auth()?.signInWithCredential(credential, completion: {
+                    (user, error) in
+                    if error != nil {
+                        print("problem")
+                    } else {
+                        print("hoşgeldin \(user?.displayName)")
+                    }
+                })
+            
                 
                 print("signed in as \(session?.userName)")
             } else {
